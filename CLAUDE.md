@@ -14,19 +14,24 @@ The brand blends science and art: a researcher's precision with a love for dark 
 
 ## Status
 
-Greenfield: no code yet. Update the sections below as the stack and structure are decided.
+Live at https://drdarkchoco.com (GitHub Pages, repo `mshahriarinia/drdarkchoco`, public). Static site, no framework and no dependencies beyond Python 3's standard library.
 
-## Suggested Stack (not yet confirmed)
+## Stack & Structure
 
-- Next.js (App Router) + TypeScript + Tailwind CSS
-- Deploy on Vercel
-- Static-first; add a backend/commerce integration only if online ordering is requested
+- `content.json`: all product, market and Instagram content. Edit this for copy changes.
+- `build.py`: generates every HTML page into `dist/` from `content.json`. Page templates, header and footer live here.
+- `dist/`: the published site. HTML is generated; `style.css`, `app.js` and `assets/` (640/1440 px JPEGs) are hand-maintained here. `dist/` is committed because the deploy publishes it as-is.
+- `dist/CNAME` is written by `build.py` (`drdarkchoco.com`). Do not delete it.
+- `.github/workflows/pages.yml`: on push to `main`, runs `python3 build.py` and deploys `dist/` to GitHub Pages.
+- Links are root-absolute (`/collection/`). `BASE=/subpath python3 build.py` rewrites them for sub-path hosting, but the custom domain does not need it.
 
-If online ordering or payments are added, use a real provisioned integration (e.g. via the Vercel Marketplace) rather than hand-rolled payment code.
+If online ordering or payments are added, use a real provisioned integration rather than hand-rolled payment code. Today the contact form only drafts a message to copy into Instagram; nothing is sent or stored.
 
 ## Commands
 
-Fill in once the project is scaffolded (dev, build, lint, test).
+- Build: `python3 build.py`
+- Preview: `python3 -m http.server -d dist`
+- Deploy: run the build, commit `dist/` together with the source change, push to `main`.
 
 ## Brand & Design Guidelines
 
@@ -44,5 +49,5 @@ Fill in once the project is scaffolded (dev, build, lint, test).
 
 ## Conventions
 
-- TypeScript strict mode; keep components small and server-rendered by default.
-- Keep assets in `public/` (optimized images); no secrets in the repo, use environment variables.
+- Keep the build dependency-free (Python standard library only); pages are plain server-rendered HTML with minimal JS.
+- Keep assets in `dist/assets/` (optimized images); no secrets in the repo.
