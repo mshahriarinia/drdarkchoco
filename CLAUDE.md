@@ -37,7 +37,7 @@ If online ordering or payments are added, use a real provisioned integration rat
 
 - Tone: warm, artisanal, slightly nerdy/scientific; premium but approachable.
 - Palette: deep cocoa browns, near-black, cream/ivory, with an accent color drawn from product photography (e.g. gold or berry).
-- Imagery is central: product photos should be large, high quality, and optimized (`next/image`, responsive sizes, alt text).
+- Imagery is central: product photos should be large, high quality, and optimized (responsive `srcset`/`sizes`, explicit width and height, alt text).
 - Mobile-first: most traffic will come from Instagram on phones.
 - Accessibility: sufficient contrast on dark backgrounds, semantic HTML, keyboard navigable.
 
