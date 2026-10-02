@@ -1,0 +1,24 @@
+{
+  "brand": "Dr.darkChoco",
+  "instagram": "https://www.instagram.com/dr.darkchoco/",
+  "featuredSeason": "halloween",
+  "markets": [],
+  "ownerChecklist": {
+    "logo": "Supply the original high-resolution cocoa-pod logo; preview uses a crop from the supplied homepage reference.",
+    "catalog": "Supply the product list, approved names, descriptions, sizes, ingredients, allergen statements, prices, currency and availability. Current entries are collection previews based on the supplied photos, not confirmed purchasable SKUs.",
+    "story": "Supply your approved personal story and optional portrait.",
+    "markets": "Supply confirmed market names, dates, times, addresses and event links.",
+    "inquiries": "Supply a business contact address and an approved form/email service to receive inquiries; configure server-side validation, rate limiting and spam protection before enabling sending.",
+    "launch": "Supply domain, business contact details and approved privacy information; public publishing requires your approval.",
+    "checkout": "Confirm legal business identity, business country, settlement currency, tax registration and collection requirements, final SKUs/prices/stock, pickup or delivery areas and charges, lead times, packaging options, cancellation/refund policies, and a payment provider account. Complete provider identity/bank onboarding yourself; share access through secure provider authorization, never paste secret keys into this file."
+  },
+  "products": [
+    {"id":"pralines","name":"Pralines","category":"pralines","image":"pralines","alt":"Three gold-painted pralines arranged on a black Dr.darkChoco gift box","description":"An artistic finish, in a little chocolate form. Explore the praline collection and ask about the current selection.","caption":"An artful little indulgence","contain":false,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"truffles","name":"Truffles","category":"truffles","image":"truffles","alt":"Chocolate truffles with one cut open to reveal its layered filling","description":"A closer look at our truffles, from the chocolate shell to the filling inside. Get in touch for details of the current selection.","caption":"Discover what’s inside","contain":false,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"tablets","name":"Tablets","category":"tablets","image":"tablets","alt":"Two chocolate tablets decorated with whole and chopped nuts on pale marble","description":"Chocolate in tablet form, with toppings that bring texture to every piece. Ask about the options currently being made.","caption":"Chocolate, piece by piece","contain":false,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"decorative","name":"Decorative Chocolates","category":"decorative","image":"decorative","alt":"All five glossy red and purple car-shaped chocolates in a long white gift box","description":"Playful shapes, carefully finished. These car-shaped chocolates offer a glimpse of the decorative collection. Contact us to discuss your occasion.","caption":"A little imagination in chocolate","contain":true,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"halloween","name":"Halloween","category":"seasonal","image":"halloween","alt":"The full long black gift box of orange and white Halloween face chocolates","description":"Orange and white faces bring a little mischief to Halloween gifting. Please inquire about seasonal availability and box options.","caption":"Seasonal gift collection","contain":true,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"christmas","name":"Christmas","category":"seasonal","image":"christmas","alt":"Seven colorful faceted star chocolates arranged above a black Dr.darkChoco gift box","description":"Colorful chocolate stars for a festive gesture. Please inquire about seasonal availability and box options.","caption":"Seasonal gift collection","contain":false,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null},
+    {"id":"valentines","name":"Valentine’s Day","category":"seasonal","image":"valentines","alt":"Red heart-shaped chocolates in an open black Dr.darkChoco gift box beside a red rose","description":"A box of chocolate hearts for someone special. Please inquire about seasonal availability and box options.","caption":"Seasonal gift collection","contain":false,"size":null,"ingredients":null,"allergens":null,"price":null,"availability":null}
+  ]
+}
