@@ -44,3 +44,4 @@ if BASE:
   t=re.sub(r'\b(href|src)="/(?!/)',lambda m:f'{m[1]}="{BASE}/',t)
   t=re.sub(r'srcset="([^"]*)"',lambda m:'srcset="'+re.sub(r'(^|, )/',lambda n:f'{n[1]}{BASE}/',m[1])+'"',t)
   f.write_text(t)
+(OUT/'CNAME').write_text('drdarkchoco.com\n')

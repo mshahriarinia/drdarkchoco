@@ -18,7 +18,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - run: BASE=/${{ github.event.repository.name }} python3 build.py
+      - run: python3 build.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
